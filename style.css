@@ -1,0 +1,26 @@
+hr{
+    border-top: 5px solid rgb(3, 3, 3)
+}
+.btn{
+    width:100px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+.btn:hover{
+    background-color: black;
+    color:red;
+    width:300px;
+    border-radius: 4px;
+}
+#img1{
+    width:100px;
+}
+.btn-txt:hover{
+    border:2px solid black;
+    color:red;
+
+}
+.btn-txt::first-letter{
+    color:rgb(240, 3, 3);
+}

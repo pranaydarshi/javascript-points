@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center><h1> <u> JAVASCRIPT POINTS</u></h1></center>
+    <h1 id="demo">Inner HTML</h1>
+
+    <button class="btn" onclick="myfunction()">Click here to see magic</button>
+    <hr size="3px">
+    
+    <img src="Sedan.png" id="img1" alt="">
+    <button onclick="change()" id="chngimg">Change Image</button>
+    <hr size="3px">
+    <h1><b>Changing font size of the text</b></h1>
+    <p id="txt">
+        Lorem ipsum dolor sit amet.
+        Sequi voluptates dolore labore explicabo.
+        Eligendi reprehenderit impedit rem aut.
+        Blanditiis, animi. Dolorem, mollitia a.
+        Est earum provident accusantium ad.
+        Natus autem vero explicabo voluptas.
+        Facere consequatur sunt saepe. Impedit.
+        Eaque explicabo facilis deleniti omnis.
+        Sunt nam et velit alias.
+        Quae id praesentium aliquam eos!
+    </p>
+    <button type="input" class="btn-txt" onclick="text()">Click here to maximize the text</button>
+    <button onclick="document.getElementById('txt').style.fontSize='16px'">Click here to minimize the text</button>
+    <hr size="3px">
+    <h1>To Hide The text</h1>
+    <p id="txt-hide">
+        Lorem ipsum dolor sit amet.
+        Sequi voluptates dolore labore explicabo.
+        Eligendi reprehenderit impedit rem aut.
+        Blanditiis, animi. Dolorem, mollitia a.
+        Est earum provident accusantium ad.
+        Natus autem vero explicabo voluptas.
+        Facere consequatur sunt saepe. Impedit.
+        Eaque explicabo facilis deleniti omnis.
+        Sunt nam et velit alias.
+        Quae id praesentium aliquam eos!
+    </p>
+    <button onclick="text_hide()">Click here to hide text</button>
+    <button onclick="text_show()">Click here to show text</button>
+    <button onclick="text_change()">Click here to change the text</button>
+    <hr size="3px">
+    <h1>Calculator</h1>
+
+    <p id="calc"></p>
+
+
+    <button onclick='add()'>Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <hr size="3px">
+    <h1>Alert</h1>
+    <button onclick="Alert()">Alert!</button>
+    <hr size="3px">
+    <h1>Printing the Page</h1>
+    <button onclick="Print()">Click here to Print the page</button>
+    <hr size="3px">
+    <h1>DATE</h1>
+    <p id="da"></p>
+    <button onclick="date()">Clike Here To View the <b>Time</b> </button>
+    <hr size="3px">
+    <h1>STRING LENGTH FINDER!</h1>
+    <p id="len"></p>
+    <button onclick="slen()">Click Here For String Length</button>
+    <p id="sorting"></p>
+    <button onclick="sort()">Click here to Sort</button>
+    <hr size="3px">
+    <h1>ARRAY</h1>
+    <p id="array"></p>
+    <button onclick="Array()">Click Here To Operate Array</button>
+    <hr size="3px">
+    <h1>SET IN JS</h1>
+    <p id="addset"></p>
+    <button onclick="set()">Click Here To view Set</button>
+    <button onclick="hide()">Click Here To Hide The Set</button>
+    <script>
+        function hide(){
+            document.getElementById("addset").style.display="none"
+        }
+        function set() {
+            let a = new Set();
+            a.add(10)
+            a.add(20)
+            a.add(30)
+            let txt = ""
+            a.forEach(function (value){
+                txt += value + "<br>"
+            })
+            document.getElementById("addset").innerHTML = "THE SET ELEMENTS ARE :" +"<br>"+ txt
+        }
+
+    </script>
+    <hr size="3px">
+    <h1>MAPS IN JS</h1>
+    <p id="maps"></p>
+    <button onclick="map()">Click Here To view Map</button>
+    <button onclick="hid()">Click Here To hide Map</button>
+    <script>
+        function hid(){
+            document.getElementById("maps").style.display="none"
+        }
+        function map(){
+            let a = new Map()
+            a.set("Name","PranayDarshi")
+            a.set("ROLLNO","20b81a0530")
+            a.set("YEAR","B.Tech 3-1")
+            let txt=""
+            a.forEach(function(value,key){
+                txt += key+": "+value+"<br>"
+            })
+            document.getElementById("maps").innerHTML="Map ELements Are: "+"<br>"+txt
+
+        
+        }
+    </script>
+
+</body>
+
+</html>
